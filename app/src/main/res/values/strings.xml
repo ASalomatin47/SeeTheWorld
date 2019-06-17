@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">See the World</string>
+
+    <!--Activities-->
+    <!--MainActivity-->
+    <string name="error_play_services">Google Play Services are outdated - please update to the latest version.</string>
+    <string name="general_na">N/A</string>
+
+    <!--SearchFragment-->
+    <string name="error_general">Error: </string>
+    <string name="error_getting_places">Error in fetching details,please ensure GPS is on and refresh.</string>
+    <string name="error_no_places">No places have been found.</string>
+    <string name="error_request_limit">You have reached the request quota.</string>
+    <string name="error_permission_denied">Please enable permissions to access the app\'s features.</string>
+    <string name="error_gps">Please turn location settings on to access the app\'s features.</string>
+
+    <string name="dialog_location_title">Enable location</string>
+    <string name="dialog_location_message">Your Locations settings are OFF \nPlease enable Location setting to access the app\'s features.</string>
+    <string name="dialog_location_positive">OK</string>
+    <string name="dialog_location_negative">Cancel</string>
+
+    <string name="share_longclick">Share location</string>
+    <string name="share_title">Share via...</string>
+    <string name="favorites_longclick">Add location to Favorites</string>
+    <string name="favorites_toast">Location saved to Favorite Places</string>
+
+    <string name="snack_network_connected">Connected, searching for nearby places...</string>
+    <string name="snack_network_disconnected">Network connection unavailable. Please ensure stable network connection.</string>
+
+    <!--MapFragment-->
+    <string name="error_user_location">Unable to get current location, please try again</string>
+    <string name="loading_map">Loading map...</string>
+
+    <!--ChargerConnector-->
+    <string name="connected_toast">Your device just connected to charger or USB port</string>
+    <string name="disconnected_toast">Your device has been disconnected from charger or USB port</string>
+
+    <!--SettingsActivity-->
+    <string name="favorites_erased_toast">List of Favorite Places was erased</string>
+    <string name="km_selected_toast">Distance will be show in kilometers</string>
+    <string name="mi_selected_toast">Distance will be show in miles</string>
+
+    <!--UI-->
+
+    <!--menus-->
+    <string name="main_menu_string">Main Menu</string>
+    <string name="exit_app_string">Exit app</string>
+
+    <!--FavoritesActivity-->
+    <string name="favorites_activity_name">Favorite Places</string>
+    <string name="favorites_double_selection_toast">You are currently viewing Favorite Places</string>
+
+    <!--SettingsActivity-->
+    <string name="settings_title">Settings</string>
+    <string name="units_text">Distance Units: </string>
+    <string name="km_text">KM.</string>
+    <string name="miles_text">MI.</string>
+    <string name="erase_favorites_text">Erase all favorite places</string>
+
+    <!--listitem-->
+    <string name="map_button">Map</string>
+    <string name="current_location_title">Current Location</string>
+    <string name="found_place_title">Name</string>
+    <string name="found_place_distance">Distance</string>
+    <string name="found_place_address">Address</string>
+    <string name="found_place_phone">Phone number</string>
+
+    <!--search_fragment-->
+    <string name="nearby_title">Nearby Places</string>
+    <string name="text_search_title">Text Search</string>
+    <string name="search_hint">Enter place name</string>
+
+
+    <string name="title_activity_favorites">FavoritesActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

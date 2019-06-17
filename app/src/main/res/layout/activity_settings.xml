@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salomatin.alex.seetheworld.activities.SettingsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintGuide_begin="120dp"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="@id/horizontal_guideline1"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/measure_lable"
+        app:layout_constraintEnd_toEndOf="@id/setting_radio_group"/>
+
+
+    <TextView
+        android:id="@+id/measure_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/units_text"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline1"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/setting_radio_group"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/horizontal_guideline1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_km"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/km_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_miles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/miles_text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/delete_favorites_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_guideline1"
+        app:layout_constraintStart_toStartOf="@id/measure_lable"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:text="@string/erase_favorites_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/delete_favorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintTop_toTopOf="@+id/delete_favorites_textview"
+        app:layout_constraintBottom_toBottomOf="@id/delete_favorites_textview"
+        app:layout_constraintEnd_toEndOf="@id/setting_radio_group"
+        app:layout_constraintStart_toStartOf="@id/setting_radio_group"
+        android:src="@drawable/ic_dialog_close_light"
+        android:tint="@color/colorPrimaryDark"/>
+
+</android.support.constraint.ConstraintLayout>
